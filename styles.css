@@ -1,0 +1,103 @@
+@import "https: //fonts.google.com/specimen/Barlow+Semi+Condensed";
+
+/* Reset & Fonts */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(214, 17%, 92%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Grid Layout */
+.grid-container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+    margin: auto;
+}
+
+#card-daniel, #card-patrick{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+
+#card-kira{
+    grid-row: span 2;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.card-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.card-header h4 {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.card-header p {
+    font-size: 12px;
+    color: hsl(214, 17%, 92%);
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Custom Backgrounds */
+.card-purple {
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+}
+
+.card-gray {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 81%);
+}
+
+.card-gray .quote{
+    color: hsl(214, 17%, 92%);
+}
+
+.card-black {
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(214, 17%, 92%);
+}
+
+.card-black .quote{
+    color: hsl(214, 17%, 92%);
+}
+
+.card-white .quote{
+    color: hsl(219, 29%, 14%);
+}
