@@ -101,3 +101,19 @@ body {
 .card-white .quote{
     color: hsl(219, 29%, 14%);
 }
+
+@media screen and (max-width: 750px) {
+    .grid-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
